@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-
+			System.out.println("Ingrese la palabra o frase a codificar");
         Scanner entrada=new Scanner(System.in);
 		String cadena1= entrada.nextLine();
 		String cadena = cadena1.toLowerCase();
@@ -24,7 +24,7 @@ public class App {
 					{
 						abdIn = false; //Si la letra NO está contenida, es que la palabra no es valida
 						//Mostramos el caracter que no es valido.
-						System.out.println(letra + " no pertenece al alfabeto");
+						System.out.println(letra + " no pertenece al alfabeto, el programa terminara!");
                         System.exit(0);
 					}
 				}
@@ -36,7 +36,7 @@ public class App {
 					for (int i=0; i<caracteres.length; i++){
 			            for (int j=0; j<alfabeto1.length; j++){
 			                if (caracteres[i]==alfabeto1[j]){
-			                    int varRes = j;
+			                    int varRes = j;								
 			                    System.out.print(numEquivalente[varRes]+" ");
 			                  }
 			                  
